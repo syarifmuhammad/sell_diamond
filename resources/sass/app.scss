@@ -1,0 +1,154 @@
+@import '~bootstrap';
+$fa-font-path: "../webfonts";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+
+$primary: #fbc103;
+
+
+body {
+    background-color: #181818;
+    color: #fff !important;
+    font-family: Poppins,Arial,Helvetica,sans-serif;
+}
+
+.bg-custom {
+    background-color: #212121;
+    border-bottom: 1px;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+
+}
+
+.navbar-brand {
+    display: inline-block;
+}
+
+.nav-link.active {
+    color: rgb(255 255 255);
+    background-color: #1696f7;
+    border-radius: 3px;
+}
+
+.strip-primary {
+    background-color: #1696f7;
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #212121;
+}
+
+.btn.btn-outline-primary {
+    color: $primary;
+    border-color: $primary;
+}
+.btn.btn-outline-primary:hover {
+    color: white;
+    background-color: $primary;
+}
+
+.footer {
+    position: relative;
+    background: url(https://xcashshop.com/assets/images/1632151288.png) no-repeat center center #212121;
+    color: white;
+    width: 100%;
+}
+
+.footer-quick a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    color: white;
+    background-color: #181818;
+}
+
+.footer>.footer-copyright>a {
+    color: white;
+}
+
+.product .form-control {
+    border-radius: 8px;
+    border: 1px solid #47566b;
+    padding: 0 14px;
+    background-color: #212121;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    height: 50px;
+    font-size: 14px;
+    caret-color: #fff;
+}
+
+.product .form-control:focus {
+    box-shadow: none;
+}
+
+.custom-card {
+    cursor: pointer;
+    background-color: #262f3b;
+    padding: 24px 18px;
+    padding: clamp(8px,2.5vw,24px) clamp(8px,2.5vw,18px);
+    border-radius: 8px;
+    position: relative;
+    min-height: 53px;
+    -webkit-transition: -webkit-transform .25s ease-in;
+    transition: -webkit-transform .25s ease-in;
+    transition: transform .25s ease-in;
+    transition: transform .25s ease-in,-webkit-transform .25s ease-in;
+    color: silver;
+}
+
+.custom-card.nohover {
+    cursor: default;
+}
+
+.custom-card.active {
+    transition: background-color .1s ease-in;
+    transition: background-color .1s ease-in,-webkit-transform .15s ease-in;
+    background-color: #01956d;
+    color: white;
+}
+
+.custom-card:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
+.custom-card.nohover:hover {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.product .product-nominal .price {
+    font-weight: 900;
+    font-size: 18px;
+    font-size: clamp(11px,3.8vw,17px);
+    min-height: calc(18px + 4px);
+    min-height: calc(clamp(12px,4vw,18px) + 4px);
+    font-style: normal;
+    margin-right: 4px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+}
+
+.product .product-nominal .nominal {
+    font-weight: 600;
+    font-size: 16px;
+    font-size: clamp(8px,3.2vw,14px);
+    font-style: normal;
+}
+
+.product .payment-method .image {
+    height: 30px;
+}
